@@ -9,4 +9,4 @@ card_or_account = input("Введите название и номер карт�
 
 #print(f"Замаскированный номер карты: {get_mask_card_number(card)}")
 #print(f"Замаскированный номер счёта: {get_mask_account(account)}")
-print(f"Новая функция {mask_account_card(card_or_account)}")
+print(f"Новая функция: {mask_account_card(card_or_account)}")
