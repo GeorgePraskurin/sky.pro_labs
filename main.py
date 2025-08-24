@@ -2,7 +2,7 @@
 
 #from src.masks import get_mask_account, get_mask_card_number
 #from src.widget import get_date, mask_account_card
-from src.processing import filter_by_state
+from src.processing import filter_by_state, sort_by_date
 
 #card = input("Введите номер карты: ")
 #account = input("Введите номер счёта: ")
@@ -20,5 +20,7 @@ somelist = [
     {'id': 594226727, 'state': 'CANCELED', 'date': '2018-09-12T21:27:25.241689'},
     {'id': 615064591, 'state': 'CANCELED', 'date': '2018-10-14T08:21:33.419441'}
 ]
-some_state = input("Введите искомое значение state")
-print(filter_by_state(somelist, some_state))
+#some_state = input("Введите искомое значение state")
+#print(filter_by_state(somelist, some_state))
+direct = input("Введите направление сортироки up/down: ")
+print(sort_by_date(somelist, direct))
